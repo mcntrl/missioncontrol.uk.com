@@ -1,0 +1,1002 @@
+{
+  "/": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "The adultin the room."
+      },
+      {
+        "tag": "p",
+        "text": "Ground-up bespoke software, built properly from day one — and rescue for AI-built MVPs that hit the wall. Either way, you get production-grade: security, GDPR, app store readiness, payments, maintainability."
+      },
+      {
+        "tag": "h3",
+        "text": "Your big idea"
+      },
+      {
+        "tag": "h3",
+        "text": "An AI app thatalmost works"
+      },
+      {
+        "tag": "h4",
+        "text": "MissionControl"
+      },
+      {
+        "tag": "h3",
+        "text": "A product real customers can actually use"
+      },
+      {
+        "tag": "h2",
+        "text": "The demo worked. Production is a different planet."
+      },
+      {
+        "tag": "h3",
+        "text": "Secrets in the source"
+      },
+      {
+        "tag": "p",
+        "text": "API keys embedded in frontend code, no rate limiting, auth bolted on as an afterthought. One curious user away from an incident."
+      },
+      {
+        "tag": "h3",
+        "text": "GDPR was never in the prompt"
+      },
+      {
+        "tag": "p",
+        "text": "Personal data with no lawful basis on record, no deletion flows, no DPAs. A regulatory fine waiting for a hearing date."
+      },
+      {
+        "tag": "h3",
+        "text": "Nobody can change it safely"
+      },
+      {
+        "tag": "p",
+        "text": "No tests, no environments, no deploy pipeline. Every change is a gamble — and the AI that wrote it isn't on call."
+      },
+      {
+        "tag": "h2",
+        "text": "Five stations. Zero surprises."
+      },
+      {
+        "tag": "p",
+        "text": "Secret management, authentication, authorisation, rate limiting, dependency audits — a hard look at everything the AI glossed over."
+      },
+      {
+        "tag": "p",
+        "text": "Data mapping, lawful basis, retention and deletion flows, cookie consent, processor agreements — aligned to UK and EU standards."
+      },
+      {
+        "tag": "p",
+        "text": "Apple and Google review requirements, privacy manifests, in-app purchase rules, store assets and submission — handled."
+      },
+      {
+        "tag": "p",
+        "text": "Production-grade Stripe or store billing: webhooks, retries, refunds, VAT, dunning — money that actually arrives."
+      },
+      {
+        "tag": "p",
+        "text": "Tests, CI/CD, environments, monitoring, documentation — so the next change is routine, not a rescue."
+      },
+      {
+        "tag": "h2",
+        "text": "Four weeks to orbit."
+      },
+      {
+        "tag": "h3",
+        "text": "Intake"
+      },
+      {
+        "tag": "p",
+        "text": "We take your codebase as it is — no judgement — and map what was built, what was assumed, and what's missing."
+      },
+      {
+        "tag": "h3",
+        "text": "Audit"
+      },
+      {
+        "tag": "p",
+        "text": "A full five-station go/no-go poll, delivered as prioritised findings with a fixed price to fix them."
+      },
+      {
+        "tag": "h3",
+        "text": "Harden"
+      },
+      {
+        "tag": "p",
+        "text": "We work through every flagged item — security, compliance, payments — until each station reads GO."
+      },
+      {
+        "tag": "h3",
+        "text": "Launch & hold"
+      },
+      {
+        "tag": "p",
+        "text": "Store submission, go-live support, and a steady hand on the console after launch."
+      },
+      {
+        "tag": "h2",
+        "text": "From AI-built to business-ready."
+      }
+    ],
+    "description": "Bespoke development & AI rescue. Ground-up bespoke software built properly from day one — and rescue & hardening for AI-built products. Production-grade: security, GDPR, app store readiness, payments, maintainability.",
+    "images": [
+      {
+        "alt": "NHS",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/nhs.png"
+      },
+      {
+        "alt": "Mars",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/mars-1.png"
+      },
+      {
+        "alt": "Oxford University Press",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/oxford.png"
+      },
+      {
+        "alt": "Dictionary.com",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/dictionary.png"
+      },
+      {
+        "alt": "Financial Times",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/financial-times.png"
+      },
+      {
+        "alt": "Pearson",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/pearson.png"
+      },
+      {
+        "alt": "Mediacom",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/mediacom.png"
+      },
+      {
+        "alt": "Art Fund",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/art-fund.png"
+      },
+      {
+        "alt": "NHS",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/nhs.png"
+      },
+      {
+        "alt": "Mars",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/mars-1.png"
+      },
+      {
+        "alt": "Oxford University Press",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/oxford.png"
+      },
+      {
+        "alt": "Dictionary.com",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/dictionary.png"
+      },
+      {
+        "alt": "Financial Times",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/financial-times.png"
+      },
+      {
+        "alt": "Pearson",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/pearson.png"
+      },
+      {
+        "alt": "Mediacom",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/mediacom.png"
+      },
+      {
+        "alt": "Art Fund",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/art-fund.png"
+      }
+    ],
+    "title": "Mission Control — From AI-built to business-ready"
+  },
+  "/our-process": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "The flight plan."
+      },
+      {
+        "tag": "p",
+        "text": "Every rescue follows the same disciplined sequence — four phases, five go/no-go stations, one fixed price agreed before we touch a line of code. And when we build bespoke from the ground up, it flies the same flight plan — launch-ready from day one."
+      },
+      {
+        "tag": "h3",
+        "text": "Intake"
+      },
+      {
+        "tag": "p",
+        "text": "We accept the codebase as-is, without judgement. Speed got you here; discipline gets you launched. We obtain repository access, hosting credentials and all available documentation, then inventory what was built, what was assumed, and what was omitted."
+      },
+      {
+        "tag": "h3",
+        "text": "Audit"
+      },
+      {
+        "tag": "p",
+        "text": "The go/no-go poll. We evaluate five stations in sequence: Security (secrets, auth, rate limiting, dependencies); GDPR & data protection (data mapping, lawful basis, deletion flows); App store readiness (Apple and Google requirements, privacy manifests, IAP rules); Payments (webhooks, retries, refunds, VAT); and Maintainability (tests, CI/CD, environments, monitoring)."
+      },
+      {
+        "tag": "h3",
+        "text": "Harden"
+      },
+      {
+        "tag": "p",
+        "text": "We remediate the red items. Secrets move to proper management, endpoints receive authentication and rate limiting, data flows become compliant, payment systems gain webhook and retry infrastructure, and the codebase acquires tests, environments and deployment pipelines."
+      },
+      {
+        "tag": "h3",
+        "text": "Launch & hold"
+      },
+      {
+        "tag": "p",
+        "text": "We manage store submissions end-to-end and support your go-live. Post-launch, we hold the console: SLA-backed support agreements, severity classifications, monitoring and alerts."
+      },
+      {
+        "tag": "h2",
+        "text": "Know exactly what stands between your MVP and launch."
+      }
+    ],
+    "description": "Every rescue follows the same disciplined sequence — four phases, five go/no-go stations, one fixed price agreed before we touch a line of code.",
+    "images": [],
+    "title": "Our Process — Mission Control"
+  },
+  "/case-studies": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "The flight log."
+      },
+      {
+        "tag": "p",
+        "text": "More than a decade of missions for major clients including the NHS, Mars, Oxford University Press, Dictionary.com and Walmart — most of them bespoke builds from the ground up. We were production-grade long before AI started writing code — which is exactly why we're the ones you call to rescue it."
+      },
+      {
+        "tag": "h3",
+        "text": "ClickBSL"
+      },
+      {
+        "tag": "p",
+        "text": "A bespoke video-calling platform connecting deaf users to British Sign Language interpreters on demand — a wholly customised video-calling system with document sharing, landline call-out and desktop technical assistance."
+      },
+      {
+        "tag": "h3",
+        "text": "Smart_R eLearning apps"
+      },
+      {
+        "tag": "p",
+        "text": "A gamified mobile learning platform for GCSE students combining bite-sized micro-lessons, adaptive learning journeys and real-time progress tracking with leaderboards and friend challenges. Built in Flutter with a web-based admin system."
+      },
+      {
+        "tag": "h3",
+        "text": "Mars Petcare ForPaws AI"
+      },
+      {
+        "tag": "p",
+        "text": "An AI-powered mobile app helping pet owners locate lost dogs using a custom neural network — reading up to 17 facial markers per photo and identifying over 130 breeds with 96%+ match accuracy. Concept to launch in twelve weeks."
+      },
+      {
+        "tag": "h3",
+        "text": "NHS condition app programme"
+      },
+      {
+        "tag": "p",
+        "text": "A suite of self-management apps for chronic and acute conditions including HIV, diabetes, neonatal care, obesity and pregnancy. Over eight apps across iOS, Android and web, powered by a bespoke CMS enabling NHS editors to publish guidance and wellness programmes."
+      },
+      {
+        "tag": "h3",
+        "text": "Retail Action Crime Kit"
+      },
+      {
+        "tag": "p",
+        "text": "A mobile app transforming retail crime reporting from hours of paperwork into minutes by capturing incident details in real time. Reports integrate directly with law-enforcement systems; analytics track patterns and hotspots."
+      },
+      {
+        "tag": "h3",
+        "text": "BikeAway bike hubs"
+      },
+      {
+        "tag": "p",
+        "text": "A self-management booking system for cycle lockers featuring NFC-enabled unlocking — no key, phone call or QR code required. iOS/Android app, web booking engine and admin interface; lockers operate without WiFi or mobile connection."
+      },
+      {
+        "tag": "h3",
+        "text": "Oxford University Press"
+      },
+      {
+        "tag": "p",
+        "text": "A five-plus year engagement beginning with two African-language dictionary microsites, scaling to over 15 language sites including the English and Spanish dictionaries. Custom Ruby on Rails development integrated with OUP's LEAP lexical data system, handling peaks of more than 20,000 requests per minute."
+      },
+      {
+        "tag": "h3",
+        "text": "Mediacom app programmes"
+      },
+      {
+        "tag": "p",
+        "text": "A series of retail commerce prototypes and MVPs, notably the Walmart Scan & Go initiative. The prototype was a massive success — Walmart adopted the functionality into its main app across multiple U.S. territories, with additional work for Carrefour and loyalty features."
+      },
+      {
+        "tag": "h3",
+        "text": "Lexico"
+      },
+      {
+        "tag": "p",
+        "text": "Launched June 2019, Lexico.com showcased the Remarkable CMS and Ruby on Rails engineering at the heart of a major dictionary platform. Every page developed in-house, with features like Trending Words and Word of the Day. Fully hosted and managed by Mission Control."
+      },
+      {
+        "tag": "h2",
+        "text": "Yours could be next to the launchpad."
+      },
+      {
+        "tag": "p",
+        "text": "Whether it's a rescue, a rebuild, or a ground-up product — the mission continues."
+      }
+    ],
+    "description": "The flight log. More than a decade of missions for the NHS, Mars, Oxford University Press, Dictionary.com, Walmart and more.",
+    "images": [
+      {
+        "alt": "ClickBSL",
+        "src": "https://assets.cdn.filesafe.space/jWVYkhK8m7JctGKdVpG4/media/68fe94236782e57dc7dc093f.png"
+      },
+      {
+        "alt": "Smart_R Education",
+        "src": "https://wearemissioncontrol.com/img/clients/smartr.png"
+      },
+      {
+        "alt": "Mars Petcare",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/mars-1.png"
+      },
+      {
+        "alt": "NHS",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/nhs.png"
+      },
+      {
+        "alt": "RACK — Retail Action Crime Kit",
+        "src": "https://wearemissioncontrol.com/img/clients/rack.png"
+      },
+      {
+        "alt": "BikeAway",
+        "src": "https://bikeaway.com/wp-content/uploads/2025/12/bikeaway-warrior-logo-cycle-lockers.png"
+      },
+      {
+        "alt": "Oxford University Press",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/oxford.png"
+      },
+      {
+        "alt": "Mediacom",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/mediacom.png"
+      },
+      {
+        "alt": "Dictionary.com",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/dictionary.png"
+      }
+    ],
+    "title": "Case Studies — Mission Control"
+  },
+  "/about": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "On consolesince 2013."
+      },
+      {
+        "tag": "p",
+        "text": "Mission Control has been crafting revolutionary interfaces and digital solutions for some of the biggest names in business for over a decade — with one mission throughout: transform how businesses and their customers experience the digital world."
+      },
+      {
+        "tag": "h2",
+        "text": "Exceptional doesn't happen by accident."
+      },
+      {
+        "tag": "p",
+        "text": "Exceptional digital experiences are engineered through a careful balance of innovative thinking, technical expertise, and a deep understanding of human behaviour. That philosophy guides every project we fly — whether we're developing cutting-edge mobile applications, designing AI-powered tools, or building solutions that push the boundaries of what's possible."
+      },
+      {
+        "tag": "p",
+        "text": "Our work spans industries and continents, but the thread connecting it all is a commitment to building digital products that don't just meet expectations — they redefine them."
+      },
+      {
+        "tag": "p",
+        "text": "It's also why we're the natural choice for rescue and hardening work. We know exactly where AI-generated code cuts corners, because we've spent a decade building the production-grade systems it's imitating."
+      },
+      {
+        "tag": "h2",
+        "text": "From the Iron Works to mission control."
+      },
+      {
+        "tag": "p",
+        "text": "We're proud to call Northampton's vibrant Cultural Quarter home. Our studio sits inside Vulcan Works — a Grade II listed building and a standing testament to Britain's industrial heritage. These walls were once part of the 19th-century Vulcan Iron Works: they echoed with the sounds of industrial innovation, and now they witness the digital revolution we're helping to shape."
+      },
+      {
+        "tag": "p",
+        "text": "There's something poetic about developing tomorrow's digital solutions in a space that once drove the industrial age forward. It's a daily reminder of the transformative power of innovation — and it keeps us pushing boundaries in everything we do."
+      },
+      {
+        "tag": "h2",
+        "text": "Our clients are a discerning bunch."
+      },
+      {
+        "tag": "p",
+        "text": "Organisations we've helped transform their digital presence."
+      },
+      {
+        "tag": "h2",
+        "text": "The crew on console."
+      },
+      {
+        "tag": "p",
+        "text": "Small team, long flight log. The people who actually build the things."
+      },
+      {
+        "tag": "p",
+        "text": "The Mission Control team has been designing, building, and flying digital solutions from the ground up since 2013 — from the first sketch on a whiteboard to the day-two patch after launch, and every go/no-go poll in between. Mobile apps, web platforms, AI systems, bespoke video infrastructure: if it ships, someone on this console has built it from zero, more than once."
+      },
+      {
+        "tag": "p",
+        "text": "That curiosity is why clients keep us around long after launch. A decade-plus of building from first principles means there's very little we haven't taken apart, fixed, or rebuilt properly — and when something new arrives, we're usually already playing with it before a client asks."
+      },
+      {
+        "tag": "p",
+        "text": "No account managers between you and the people writing the code. When you talk to Mission Control, you're talking to the crew on console."
+      },
+      {
+        "tag": "p",
+        "text": "We are also, unapologetically, an enormous bunch of geeks. We run Linux on our daily drivers (and will happily tell you why), build our own machines, collect gadgets the way other agencies collect awards, and argue about window managers, mechanical keyboards, and dive watches with complete sincerity."
+      },
+      {
+        "tag": "p",
+        "text": "It's not a quirk — it's the point. People who genuinely love computing build better things on it."
+      },
+      {
+        "tag": "h2",
+        "text": "Come see what we can do for you."
+      },
+      {
+        "tag": "p",
+        "text": "Rescue, rebuild, or ground-up — we'd love to hear what you're flying."
+      }
+    ],
+    "description": "On console since 2013. Mission Control has been crafting revolutionary interfaces and digital solutions for some of the biggest names in business for over a decade.",
+    "images": [
+      {
+        "alt": "The Mission Control sign hanging outside Vulcan Works, Northampton",
+        "src": "https://wearemissioncontrol.com/img/vulcan-works-hq.jpg"
+      },
+      {
+        "alt": "NHS",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/nhs.png"
+      },
+      {
+        "alt": "MARS",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/mars-1.png"
+      },
+      {
+        "alt": "Oxford University Press",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/oxford.png"
+      },
+      {
+        "alt": "Dictionary.com",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/dictionary.png"
+      },
+      {
+        "alt": "Financial Times",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/financial-times.png"
+      },
+      {
+        "alt": "Pearson",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/pearson.png"
+      },
+      {
+        "alt": "Mediacom",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/mediacom.png"
+      },
+      {
+        "alt": "Art Fund",
+        "src": "https://missionhq.uk/wp-content/uploads/2024/11/art-fund.png"
+      },
+      {
+        "alt": "Ink sketch portrait of a Mission Control flight director",
+        "src": "https://wearemissioncontrol.com/img/director.png"
+      },
+      {
+        "alt": "Ink sketch portrait of a Mission Control crew member",
+        "src": "https://wearemissioncontrol.com/img/crew.png"
+      },
+      {
+        "alt": "Ink sketch portrait of a Mission Control crew member",
+        "src": "https://wearemissioncontrol.com/img/crew-2.png"
+      },
+      {
+        "alt": "Ink sketch portrait of a Mission Control crew member",
+        "src": "https://wearemissioncontrol.com/img/crew-3.png"
+      },
+      {
+        "alt": "Ink sketch portrait of a Mission Control crew member",
+        "src": "https://wearemissioncontrol.com/img/crew-4.png"
+      },
+      {
+        "alt": "Ink sketch portrait of a Mission Control crew member",
+        "src": "https://wearemissioncontrol.com/img/crew-5.png"
+      }
+    ],
+    "title": "About Us — Mission Control"
+  },
+  "/contact": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "Open a channel."
+      },
+      {
+        "tag": "p",
+        "text": "Tell us what you're flying — an AI-built MVP that's hit the wall, a product that needs hardening, or a ground-up mission. We'll come back with a clear, fixed-price proposal for next steps."
+      },
+      {
+        "tag": "p",
+        "text": "Don't fill this out if you're human:"
+      }
+    ],
+    "description": "Open a channel. Tell us what you're flying — an AI-built MVP that's hit the wall, a product that needs hardening, or a ground-up mission.",
+    "images": [],
+    "title": "Contact Us — Mission Control"
+  },
+  "/blog": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "The transmission log."
+      },
+      {
+        "tag": "p",
+        "text": "Dispatches from the console — launches, engineering opinions, Linux musings, and the occasional unhinged-but-helpful guide. Written by the crew, broadcast from Northampton."
+      },
+      {
+        "tag": "h3",
+        "text": "Why can't AI just build this app for us?"
+      },
+      {
+        "tag": "p",
+        "text": "We get asked this question a LOT these days. And frankly, it's a hard one to answer without sounding self-serving. But at the end of the day, AI is a tool — one that even WE use."
+      },
+      {
+        "tag": "h3",
+        "text": "Picking the right tool for the job"
+      },
+      {
+        "tag": "p",
+        "text": "Agencies will ALWAYS push their favourite technology. One shop insists on native, another on React Native, another on Flutter. The thing is — each of them is correct, and each of them is totally wrong."
+      },
+      {
+        "tag": "h3",
+        "text": "Framework & Fairphone — we like our hardware like our software"
+      },
+      {
+        "tag": "p",
+        "text": "Modular, repairable, and ours. The hardware finally changes with our needs — not the other way around — and it matches the software we develop and love perfectly."
+      },
+      {
+        "tag": "h3",
+        "text": "2025: The year of the Linux (Omarchy) desktop"
+      },
+      {
+        "tag": "p",
+        "text": "We've been all Linux, all the time since 2016 — and for the first time in years, there has been ZERO distro-hopping within these walls. This may FINALLY be the year of the Linux Desktop."
+      },
+      {
+        "tag": "h2",
+        "text": "Got a mission for the crew?"
+      }
+    ],
+    "description": "The Transmission Log. Dispatches from the console — launches, engineering opinions, Linux musings, and the occasional unhinged-but-helpful guide.",
+    "images": [
+      {
+        "alt": "Why Can't AI Just Build This App For Us?",
+        "src": "https://missionhq.uk/wp-content/uploads/2026/02/65fc9dbd6fac491685435066_image-401.webp"
+      },
+      {
+        "alt": "Picking the Right Tool for the Job",
+        "src": "https://missionhq.uk/wp-content/uploads/2025/08/Blog-Image-2.png"
+      },
+      {
+        "alt": "Framework & Fairphone",
+        "src": "https://missionhq.uk/wp-content/uploads/2025/08/frametux.jpg"
+      },
+      {
+        "alt": "2025: The Year of the Linux (Omarchy) Desktop",
+        "src": "https://missionhq.uk/wp-content/uploads/2025/08/image.png"
+      }
+    ],
+    "title": "News & Blog — Mission Control"
+  },
+  "/blog/why-cant-ai-just-build-this-app-for-us": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "Why can't AI just build this app for us?"
+      },
+      {
+        "tag": "p",
+        "text": "So we get asked this question a LOT these days. And frankly, it's a hard one to answer without sounding self-serving, or even a bit perturbed that AI has moved into the coding space with such aplomb. But at the end of the day, AI is a tool — and one that even WE use in the course of our work."
+      },
+      {
+        "tag": "p",
+        "text": "But do we find AI (Claude Code, ChatGPT, etc) a real challenger for the type of projects and work that we do — well, no."
+      },
+      {
+        "tag": "p",
+        "text": "Without a doubt, AI can make some impressive Apps and Websites. From a great portfolio site for your photography business, to a nice CV-focused site to market yourself — AI can pull from thousands of online templates, and quickly 'mash up' something that 'kinda' looks right. The same can be said for Mobile Apps. We've tinkered with things like Claude Code to make some simple 'scratch that itch' personal Apps like To-Do Lists and even Podcast Players that are pretty straight-forward and easy to describe and create. All that is fine and good."
+      },
+      {
+        "tag": "p",
+        "text": "But when a client asks if AI can simply build a new video communication App, or e-Commerce Solution, or integrate with their CRM and back-end booking engines, we put the brakes on pretty quickly."
+      },
+      {
+        "tag": "p",
+        "text": "For clients like Positive Signs — where our ClickBSL Solution is soon to allow the UK Deaf Community to carry a video link to a BSL Translator at any time, anywhere — execution, security, and a truly artisanal approach are absolutely critical."
+      },
+      {
+        "tag": "p",
+        "text": "As mentioned in previous posts, we practice a holistic and 'empathetic design' approach that means we start with the End Users themselves, rather than simple App features and requirement documents. While AI can execute some really impressive prototypes and first steps in a development cycle, the human element, the 'art' of code development goes far beyond Flutter, React, or even Swift and Kotlin."
+      },
+      {
+        "tag": "p",
+        "text": "If it sounds like we're a bit 'sniffy' about the 'art' of code development — you're right! And there's a reason."
+      },
+      {
+        "tag": "p",
+        "text": "When solutions like ClickBSL — as well as many other recent deployments for clients like RACK, Smart_R, and BikeAway — absolutely require the human element of both design and execution, there is simply no way to 'AI-generate' the kind of creativity, vision, and integration expertise a seasoned Development Team can bring. Oftentimes the solutions we build do not reveal themselves with all their features and glory until well into an iterative development process — that means early on in the MVP or early release cycle. This is something that we must do TOGETHER with our clients — and most importantly, with their End Users."
+      },
+      {
+        "tag": "p",
+        "text": "And don't get us started with financial integrations, security and GDPR, and writing bug-free code. AI generated Apps have already revealed themselves to be perhaps the most in-secure, hackable, and bug-ridden apps ever released in App Stores or via Web Apps online."
+      },
+      {
+        "tag": "p",
+        "text": "A meme that really tickles us is one that illustrates some of the issues with AI development perfectly (skip to the video below)."
+      },
+      {
+        "tag": "p",
+        "text": "Have you ever asked Gemini or ChatGPT or Copilot to make an image or a logo? It gets CLOSE to perfect sometimes, doesn't it? But there will be that ONE painful misspelling, or odd fuzzy angle. So you ask the chatbot to fix that one SMALL issue…and all hell breaks loose."
+      },
+      {
+        "tag": "p",
+        "text": "You see 'generative AI' is just that — generative and re-generative."
+      },
+      {
+        "tag": "p",
+        "text": "The AI has absolutely no idea what your small tweak means, so it re-renders and redevelops every part of the original request when even a small tweak to a small area is all that is required. This may be a small issue when it's a single image you have the time and patience to work through, but imagine the landmines that are planted in a major App development with every small tweak that is requested to your AI developer. It's a re-generative nightmare."
+      },
+      {
+        "tag": "p",
+        "text": "We'll leave you with this fun little illustration of what 'vibe coding' major solutions can often feel like. Again, we're not here to bash on AI — we use it every day ourselves, but this is sadly more true than satire:"
+      },
+      {
+        "tag": "p",
+        "text": "Happy February everyone! Keep close to Mission Control for some BIG launch announcements coming later this month. And as always, drop us a line, we're more fun to chat to than Claude, we promise 😉"
+      },
+      {
+        "tag": "h2",
+        "text": "Got a mission for the crew?"
+      }
+    ],
+    "description": "AI is a tool — one that even WE use. But is it a real challenger for the type of projects we do? Well, no.",
+    "images": [
+      {
+        "alt": "Why Can't AI Just Build This App For Us?",
+        "src": "https://missionhq.uk/wp-content/uploads/2026/02/65fc9dbd6fac491685435066_image-401.webp"
+      },
+      {
+        "alt": "ClickBSL by Positive Signs",
+        "src": "https://missioncontrol.uk.com/wp-content/uploads/2026/02/clickbsl-1024x550.png"
+      }
+    ],
+    "title": "Why Can't AI Just Build This App For Us? — Mission Control"
+  },
+  "/blog/picking-the-right-tool-for-the-job": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "Picking the right tool for the job"
+      },
+      {
+        "tag": "p",
+        "text": "(or How We Learned to Stop Worrying and Love the Frameworks)"
+      },
+      {
+        "tag": "p",
+        "text": "Over the last few years, we have been diving more and more into the world of multi-platform Self-Service and Self-Management style Apps for Mobile and Web. Oftentimes, we are working with clients who have done very little in the digital space — aside from a very basic Website (or even a Squarespace or Wix instance) — and they are looking to us to select the best technology and framework for their project."
+      },
+      {
+        "tag": "p",
+        "text": "The thing about Agencies and Software Development shops is — they will ALWAYS push their favourite technology, regardless of what is best for the project or even the future maintenance of their client and their customers."
+      },
+      {
+        "tag": "p",
+        "text": "There's just no getting around that."
+      },
+      {
+        "tag": "p",
+        "text": "One Mobile Development Studio will insist on native development for each platform (Swift for iOS, Kotlin for Android, and a dedicated JS Framework for Web), another on a simplified cross-platform approach that maps to their team's existing skillset (say, React Native), or perhaps even a more modern, 'widget-focused' single interface solution like Flutter."
+      },
+      {
+        "tag": "p",
+        "text": "The problem is — each of them is correct — and each of them is totally wrong."
+      },
+      {
+        "tag": "p",
+        "text": "These days a solution that combines multiple Mobile Apps, Tablet Apps, a Web site, and even a Management Portal can be developed in a number of languages and methodologies — and none of them are functionally incorrect. But there is a LOT more to consider than just the empiric project goal of getting 'something out the door'."
+      },
+      {
+        "tag": "p",
+        "text": "How will users interact with the Apps? How often will the App offer new features and functions? Will your client eventually bring in an internal team to manage the solution? Will other Developers be involved in future? What is the projected lifespan of the solution? All of these questions have a massive impact on the codebase that is selected, and sadly we see these questions are too often left unanswered when the first lines of code begin to be laid. And that's just backwards."
+      },
+      {
+        "tag": "p",
+        "text": "At Mission Control we have always advocated for the best experience for each platform — which means more often than not — going for a native language for each platform we target. But in the last few years, when new clients come on board needing a simplified, centralised solution they can pick up and run with — approaches like React and Flutter have just made more sense."
+      },
+      {
+        "tag": "p",
+        "text": "After all, why rebuild the codebase multiple times for essentially the same App experience? The trouble for us has always been the 'experience' part of that statement. While Flutter has proven exceptional for helping us optimise one codebase across multiple Mobile and even Web Operating Systems, some of the recent changes to platforms (we're looking at you, iOS 26 and your 'liquid glass'!) has meant that a 'one size fits all model' will leave the user experience lacking in many cases."
+      },
+      {
+        "tag": "p",
+        "text": "Enter Kotlin Multiplatform (KMP). While the largest percentage of our projects have used Flutter or direct Native approaches the past few years, we are extremely bullish on the prospect of KMP taking the mantle as our chosen development language. KMP has all the benefits of Flutter and React (i.e. a common base for business rules, integrations, etc) but allows us the freedom to design dedicated layouts for each platform. So that means, we get all the liquid glass goodness from iOS 26, all the new slick animations on Android's Material 3 Expressive, and even a solid base to extend to Web and other channels."
+      },
+      {
+        "tag": "p",
+        "text": "You can hear the excitement in our voice, I'm sure. But we also need to pump the brakes a bit (even we get carried away with these new toys sometimes!)."
+      },
+      {
+        "tag": "p",
+        "text": "Back to the core point of this post — even with Kotlin Multiplatform in the mix — there is still no 100% correct answer when choosing a development methodology/framework for our (or your) clients. The key is recognising all the variables — mapping the future of the solution from both an ongoing management aspect as well as an end user experience — and (to us at least) staying as close to native on each platform as possible."
+      },
+      {
+        "tag": "p",
+        "text": "So perhaps KMP gets us closer to our ideal — but Flutter is still the choice for many of our projects — and we never tire of jumping straight in to each dedicated platform (Swift/Kotlin even Objective C, etc) when that makes the most sense for the project."
+      },
+      {
+        "tag": "p",
+        "text": "So when we're asked which is 'the best' approach — we tend to slow things down and first ask all those annoying questions we mentioned above about the future plans for the solution, our client's vision of where this is all headed, and what their end users really want to see in an App. Only then can we map out a few solid options, make the best call on what (at least for today!) looks like the correct, most sustainable approach, and start to write code that will work now and well into the future for everyone involved."
+      },
+      {
+        "tag": "h2",
+        "text": "Got a mission for the crew?"
+      }
+    ],
+    "description": "Agencies will ALWAYS push their favourite technology. The thing is — each of them is correct, and each of them is totally wrong.",
+    "images": [
+      {
+        "alt": "Framework choices",
+        "src": "https://missioncontrol.uk.com/wp-content/uploads/2025/08/image-7-1024x692.png"
+      },
+      {
+        "alt": "Native vs cross-platform",
+        "src": "https://missioncontrol.uk.com/wp-content/uploads/2025/08/image-8.png"
+      },
+      {
+        "alt": "Picking the right tool for the job",
+        "src": "https://missionhq.uk/wp-content/uploads/2025/08/Blog-Image-2.png"
+      }
+    ],
+    "title": "Picking the Right Tool for the Job — Mission Control"
+  },
+  "/blog/framework-fairphone-we-like-our-hardware-like-our-software": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "Framework & Fairphone — we like our hardware like our software"
+      },
+      {
+        "tag": "p",
+        "text": "As we detailed in our previous post on Omarchy — we have been Open Source and Linux advocates here at Mission Control for well over 10 years. And back in those days, believe me, it was a serious LABOUR of love (emphasis on labour). But over the past few years, the Linux world and new users like DHH have made Linux so much more accessible and inviting for small development shops like ours — as well as general and slightly adventurous users outside the developer community."
+      },
+      {
+        "tag": "p",
+        "text": "Sure we love and advocate for Tiling Window Managers these days — and as you know — feel Omarchy is the perfect setup for businesses like ours, we also love the flexibility and configurability of long-standing DE projects like KDE Plasma, XFCE and even Gnome. Regardless of what you slap on top of Linux — the core is still the same — an open and highly flexible computing experience that Windows and macOS can't touch."
+      },
+      {
+        "tag": "p",
+        "text": "Luckily for us, the same is starting to happen with hardware."
+      },
+      {
+        "tag": "p",
+        "text": "For many years, Linux-dedicated hardware vendors like System76 and Tuxedo Computers (not to mention Slimbook, Starlabs and others) have fought the good fight for Linux-first laptops, traditionally using Clevo and Tongfang chassis as a platform. And here at Mission HQ we have owned our fair share of System76 and Tuxedo laptops and desktops in particular. But late last year we purchased our first machine from Framework — the Framework 16 (we like bigger screens here) and we were simply blown away with the Linux 'spirit' of managing, upgrading, and tweaking our hardware to our hearts' delight."
+      },
+      {
+        "tag": "p",
+        "text": "From colourful plug & play extension cards, to multiple keyboard and bezel options and even interactive LCD Matrix and colourshift spacer modules — these things are just plain FUN to setup and use."
+      },
+      {
+        "tag": "p",
+        "text": "And this is EXACTLY the feeling we all get from Linux!"
+      },
+      {
+        "tag": "p",
+        "text": "For example, as a small business we have landed on the 28-inch BenQ Programming Monitors as the best 3:2 bang for the buck — and absolutely perfect for Tiling WMs and Hyprland in particular. For some reason, no matter what we try, we cannot get the full 60Hz resolution from HDMI on Linux — no matter how many tweaks and patches and workarounds we have tried. Enter Displayport — and the handy ability to simply slide in a Displayport adaptor into one of our Framework 16 input slots — MAGIC."
+      },
+      {
+        "tag": "p",
+        "text": "And when we head to a meeting room or a client's office to display a presentation or discuss a build, we simply swap out the Displayport expansion card for HDMI — and voila! Absolutely no dongles needed here. It seems like a small thing, but to us, it's really a HUGE thing. It means the hardware changes with our needs — not the other way around."
+      },
+      {
+        "tag": "p",
+        "text": "Apple used to tell us what ports to use — and if our external devices or desktop setup didn't exactly fit — somehow that was OUR fault, and we were pointed toward dongles, creating mess in our desks and bags. With Framework, we design the machine to us, and keep re-designing and tweaking them as we go. It's a sustainable hardware philosophy that just works better for what we do."
+      },
+      {
+        "tag": "p",
+        "text": "Thankfully, we are starting to see something similar in the Phone space. For years we have held out hope for a Linux-powered Smartphone that could actually be used as a daily driver. From teases by Purism, Pine64 and others — we have come tantalisingly close. But we have to face facts (here in the UK at least), some Apps are a MUST HAVE for daily driving — and frankly as an Android and iOS Developer, we can't really be living on low-adoption software no matter how much we want to break free of the Apple and Google stranglehold."
+      },
+      {
+        "tag": "p",
+        "text": "Enter Fairphone."
+      },
+      {
+        "tag": "p",
+        "text": "You can say we have been 'Fairphone-curious' for a few years. The problem is — we are tech-Magpies and are snobs for beautiful hardware as well as beautiful software — and previous iterations of the Fairphone concept have just been…well…clunky."
+      },
+      {
+        "tag": "p",
+        "text": "Thankfully, Fairphone has heard the criticism from the community and their latest iteration — the Fairphone 6 — comes as close to a 'normal flagship' Android Phone as we've seen. It's modular, fully repairable, well built, and runs Android like a champ (!) That means all our banking Apps work well, our customer Apps work like a dream, and we have a piece of hardware, like Framework, we can make our own."
+      },
+      {
+        "tag": "p",
+        "text": "We're a Mobile App Developer at the end of the day — so we are swimming in iPhones, Foldables, flagships from Samsung, Google, Oppo, OnePlus, Nothing, and even Huawei here — but we are also choosing to carry Fairphones — as we're getting that same vibe, that BUZZ from a little bit more control. In the phone world — this is minor — but it's a step in the right direction."
+      },
+      {
+        "tag": "p",
+        "text": "And sometimes, it's even worth some temporary rewiring and discomfort. While we handle flagship phones all day when testing our Apps and builds, it's nice to head home with something a bit more 'our own' in our bags and our pockets."
+      },
+      {
+        "tag": "p",
+        "text": "So for now, we're sailing forward with more sustainable and open hardware from Framework and Fairphone. At the end of the day, we're having a LOT more fun in our computing lives — and while it's better for a number of lofty reasons — we find it selfishly works better for us and matches the software we develop and love perfectly."
+      },
+      {
+        "tag": "h2",
+        "text": "Got a mission for the crew?"
+      }
+    ],
+    "description": "Modular, repairable, and ours. The hardware finally changes with our needs — not the other way around.",
+    "images": [
+      {
+        "alt": "Framework laptop with Tux",
+        "src": "https://missionhq.uk/wp-content/uploads/2025/08/frametux.jpg"
+      },
+      {
+        "alt": "Framework 16 laptop",
+        "src": "https://missioncontrol.uk.com/wp-content/uploads/2025/08/framework16-768x1024.jpg"
+      },
+      {
+        "alt": "DisplayPort expansion card",
+        "src": "https://missioncontrol.uk.com/wp-content/uploads/2025/08/displayport-768x1024.jpg"
+      },
+      {
+        "alt": "Fairphone",
+        "src": "https://missioncontrol.uk.com/wp-content/uploads/2025/08/image-6-1024x344.png"
+      },
+      {
+        "alt": "Framework and Tux",
+        "src": "https://missionhq.uk/wp-content/uploads/2025/08/frametux-1024x768.jpg"
+      }
+    ],
+    "title": "Framework & Fairphone — We Like Our Hardware Like Our Software — Mission Control"
+  },
+  "/blog/2025-the-year-of-the-linux-omarchy-desktop": {
+    "canonical": "",
+    "content": [
+      {
+        "tag": "h1",
+        "text": "2025: The year of the Linux (Omarchy) desktop"
+      },
+      {
+        "tag": "p",
+        "text": "OK, so we have been using Linux more or less as our main desktop Operating System here at Mission Control since 2016. Sure we use MacBooks from time to time — and even the odd Windows machine when a PUBG or Fortnite session is ABSOLUTELY required. But for the most part, since late 2016, it's been all Linux, all the time here."
+      },
+      {
+        "tag": "p",
+        "text": "And we have been SUPER proud of that."
+      },
+      {
+        "tag": "p",
+        "text": "Back in 2018, we worked closely with Microsoft to deploy the first Linux-optimised environment onto the new Azure platform. That was huge for us. And while it completely validated our view (and anyone else you will ask) that Linux is king in the Server World, there was still a nagging disappointment that the Linux Desktop experience was lagging behind (and losing ground by the day) to macOS and Windows. The death knell seemed to sound for good in November 2020 with Apple's release of the M1 Architecture for their MacBook and Mac computers — it was simply too perfect for anyone (and especially Developers) to consider another OS — even Windows!"
+      },
+      {
+        "tag": "p",
+        "text": "And with that, the last five years has made us feel a bit stubborn in our ongoing passion and defence of the Linux desktop. In fact, our distro-hopping has only increased, with a few years fully dedicated to OpenSuse, several years in the desert of Fedora and Ubuntu-based derivatives, and even a few dalliances with atomic desktops like Nix and Bluefin. All the while we have remained steadfast in our proclamations that the supreme interaction of daily computing comes by way of the Linux kernel."
+      },
+      {
+        "tag": "p",
+        "text": "Case in point — here's our CEO giving an online seminar late last year for The National Museum of Computing on the history (and potential) of Linux on the Desktop."
+      },
+      {
+        "tag": "p",
+        "text": "But this may be it, folks — this may indeed FINALLY be the year of the Linux Desktop. Mark it on your calendars — this is happening."
+      },
+      {
+        "tag": "p",
+        "text": "A few things have really come together to make this ongoing 'meme' a potential reality for this year and next. Let's start with our old friend, Apple."
+      },
+      {
+        "tag": "p",
+        "text": "For many of us, Apple was the contrary and irreverent choice of the rebel-minded digerati since the early 2000's. Windows was clearly the more practical platform for both Developers and Executives throughout the tech and corporate world — right up until 2010 when something began to change. A radical shift started to occur — pushing consumers and prosumers alike to the more culturally exciting and relevant platform that connected so well with our new toys, the iPhone and iPad. And for most of us, we never looked back. Macs were faster, better built, carried more pop cache, and showed a certain level of class and taste that Windows machines lacked (and really, still do)."
+      },
+      {
+        "tag": "p",
+        "text": "But here's the thing — macOS and Apple hardware, while arguably perfect in just about every way — is supremely BORING."
+      },
+      {
+        "tag": "p",
+        "text": "MacBooks and Studio Displays and even iPhones may indeed be the apex of utility and reliability (or better described perhaps as 'appliances'), but the connection between user and computer and the wonder and adventure of computing has been lost. Worse, it's now mediated completely by Apple with draconian publishing rules for Apps, enforced design updates (gulp, liquid glass), and maddening control measures across every aspect of the experience. When you use an Apple platform, you are not using a device. You are interacting with a set of rules defined by committee. At best you are a few steps removed from inputting heat times into a microwave, or setting the brew duration on your coffee machine. The Apple experience is now transactional and hollow."
+      },
+      {
+        "tag": "p",
+        "text": "Enter Linux."
+      },
+      {
+        "tag": "p",
+        "text": "While those of us in the Linux world have suspected the appeal of this entirely open (at times frustratingly open!) computing experience could appeal to a broader swathe of the Developer and tech-enthusiast community, we have been disappointed year after year with the failed pronouncement that this year — YES this year (!) — will finally see a mass adoption of this underappreciated platform."
+      },
+      {
+        "tag": "p",
+        "text": "But the perfect storm has arrived. Apple is finally being seen for what it is, and the Developer community has a number of new tools to get them excited. Primary among these is Omarchy — the new Arch/Hyprland spin from none other than David Heinemeier Hansson (DHH) of Ruby on Rails and Basecamp/37Signals fame."
+      },
+      {
+        "tag": "p",
+        "text": "At Mission Control we have been using Arch since 2017 in many forms — from Openbox to KDE Plasma to i3 and even Gnome desktop environments. Arch is probably our most used base for many of our machines, and even server instances. Last year a few of us played with Hyprland and were mightily impressed, but the time involved in tweaking it, customising elements, and making it fast and suitable for our needs was simply not practical. Then last month we tried Omarchy — and we were off and running in no time flat. It was the Hyprland experience we had been waiting for, and for the first time in years, there has been ZERO distrohopping within these walls."
+      },
+      {
+        "tag": "p",
+        "text": "It helps that we are all Basecamp and 37Signals product users, sure. But changing from some defaults and keybinds to other Apps and systems is a complete breeze with Omarchy. It's fast, super stable, and a real delight to use. As Linux users, we thought computing could not get more rewarding than using KDE or even a tiling window manager like i3 — but boy, were we wrong."
+      },
+      {
+        "tag": "p",
+        "text": "Smiles all around the place."
+      },
+      {
+        "tag": "p",
+        "text": "And it's not just us. The Developer community is moving from Apple to Omarchy/Linux in droves…and this project has wings. Even the old-guard Linux community is standing up and taking notice."
+      },
+      {
+        "tag": "p",
+        "text": "It's actually occurred to us, this may be more than a single post — this may be a longstanding series. And with our new found fervour for Omarchy which has truly re-awakened our love of Linux — this is only the beginning."
+      },
+      {
+        "tag": "p",
+        "text": "And for the first time in years, we are not alone."
+      },
+      {
+        "tag": "h2",
+        "text": "Got a mission for the crew?"
+      }
+    ],
+    "description": "We've been all Linux, all the time since 2016. This may FINALLY be the year of the Linux Desktop.",
+    "images": [
+      {
+        "alt": "Omarchy desktop",
+        "src": "https://missionhq.uk/wp-content/uploads/2025/08/image.png"
+      },
+      {
+        "alt": "Linux desktop seminar",
+        "src": "https://missioncontrol.uk.com/wp-content/uploads/2025/08/image-4.png"
+      },
+      {
+        "alt": "Hyprland desktop",
+        "src": "https://missioncontrol.uk.com/wp-content/uploads/2025/08/image-2-1024x576.png"
+      },
+      {
+        "alt": "Omarchy in use",
+        "src": "https://missioncontrol.uk.com/wp-content/uploads/2025/08/image-5.png"
+      },
+      {
+        "alt": "The year of the Linux desktop",
+        "src": "https://missionhq.uk/wp-content/uploads/2025/08/image-1024x328.png"
+      }
+    ],
+    "title": "2025: The Year of the Linux (Omarchy) Desktop — Mission Control"
+  }
+}
