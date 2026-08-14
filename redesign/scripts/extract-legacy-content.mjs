@@ -126,7 +126,10 @@ const pages = [];
 for (const file of htmlFiles.sort()) {
   const html = await readFile(file, "utf8");
   const page = extractPage(file, html);
-  if (page.route === "/" || page.blocks.length < 2) continue;
+  // Keep short but legitimate posts as long as they contain one meaningful
+  // content block. RSS/feed documents still produce no page blocks and remain
+  // excluded by the route filters above.
+  if (page.route === "/" || page.blocks.length < 1) continue;
   pages.push(page);
 }
 

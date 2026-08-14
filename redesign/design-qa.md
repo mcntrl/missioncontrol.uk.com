@@ -13,7 +13,7 @@ The selected concept is the visual-system target. It supplies the near-black lau
 
 ## Route and content coverage
 
-- Six current core routes, four current articles, and thirty-eight legacy routes were incorporated. Overlapping current/legacy URLs resolve to the current version, producing forty-five unique indexable routes.
+- Six current core routes, four current articles, and thirty-nine legacy routes were incorporated. Overlapping current/legacy URLs resolve to the current version, producing forty-six unique indexable routes.
 - The homepage, process, case-study index, about, contact, blog index, article, historic case-study, service/archive, and legal page families were reviewed.
 - Original page copy and meaningful source images were retained. Historic pages remain available on their existing paths, with old-domain references normalized to `wearemissioncontrol.com`.
 
@@ -56,7 +56,7 @@ The selected concept is the visual-system target. It supplies the near-black lau
 - Representative current and legacy routes each returned one H1, the expected canonical URL, no broken images, and no horizontal overflow.
 - Browser console warnings/errors on the final port: none.
 - Production build: passed.
-- SEO verification: 45 routes passed unique-title, description, canonical, Open Graph/Twitter, JSON-LD, static-H1/body, sitemap, and robots checks.
+- SEO verification: 46 routes passed unique-title, description, canonical, Open Graph/Twitter, JSON-LD, static-H1/body, sitemap, and robots checks.
 - Sites packaging tests: 4 passed, 0 failed.
 
 final result: passed

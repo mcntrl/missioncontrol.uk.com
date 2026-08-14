@@ -2580,6 +2580,21 @@
     ]
   },
   {
+    "route": "/mission-control-ceo-at-the-national-museum-of-computing",
+    "title": "Mission Control CEO at The National Museum of Computing - Mission Control",
+    "description": "Part of the The National Museum of Computing’s Lecture Series, Mission Control’s CEO, Eddie Vassallo takes us through a rapid history of the Linux Operating System, why it still matters in 2024, and how to quickly jump in and give it a try.",
+    "canonical": "https://wearemissioncontrol.com/mission-control-ceo-at-the-national-museum-of-computing/",
+    "ogImage": "/assets/legacy/wp-content/uploads/2024/12/linux-demystified.png",
+    "published": "2024-09-26T10:56:13+00:00",
+    "modified": "2025-03-10T18:01:14+00:00",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Part of the The National Museum of Computing’s Lecture Series, Mission Control’s CEO, Eddie Vassallo takes us through a rapid history of the Linux Operating System, why it still matters in 2024, and how to quickly jump in and give it a try."
+      }
+    ]
+  },
+  {
     "route": "/mission-control-launches-laurelle-app-on-ios-and-android",
     "title": "Mission Control Launches Laurelle App on iOS and Android 🚀 - Mission Control",
     "description": "Mission Control is very excited to announce the launch of the new Laurelle Antique Jewellery Mobile App experience – developed natively for both Apple iOS and Google Android devices.",

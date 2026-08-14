@@ -2,7 +2,7 @@
 
 ## Approved and ready for staging
 
-- Content and metadata sign-off recorded for all 45 routes.
+- Content and metadata sign-off recorded for all 46 routes.
 - Current and legacy URL coverage is prerendered and included in the sitemap.
 - Unique titles, descriptions, canonical URLs, social metadata, structured data, static headings, and static body copy are verified.
 - Desktop and mobile navigation, representative current and legacy pages, images, forms, and responsive layouts have passed QA.
