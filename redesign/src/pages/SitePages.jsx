@@ -12,7 +12,10 @@ import {
   caseStudies,
   clients,
   currentPageContent,
+  historyMilestones,
+  principles,
   processPhases,
+  servicePages,
 } from "../content/site-data";
 import { ContactForm } from "../components/SiteChrome";
 
@@ -85,6 +88,22 @@ export function LaunchCta({ title = "From AI-built to business-ready.", copy = "
   );
 }
 
+function ServiceLinksGrid({ limit }) {
+  const services = typeof limit === "number" ? servicePages.slice(0, limit) : servicePages;
+  return (
+    <div className="service-links-grid">
+      {services.map((service, index) => (
+        <a className="service-link-card" href={service.route} key={service.route}>
+          <span>{String(index + 1).padStart(2, "0")} · Capability</span>
+          <h3>{service.shortTitle}</h3>
+          <p>{service.description}</p>
+          <strong>Explore capability <ArrowRight /></strong>
+        </a>
+      ))}
+    </div>
+  );
+}
+
 export function HomePage({ openAssessment }) {
   return (
     <>
@@ -111,6 +130,27 @@ export function HomePage({ openAssessment }) {
         </div>
       </section>
 
+      <section className="company-intro" aria-labelledby="company-intro-title">
+        <div className="company-intro-heading">
+          <span className="eyebrow">Independent product & software studio</span>
+          <h2 id="company-intro-title">Building ambitious digital products since 2013.</h2>
+        </div>
+        <div className="company-intro-copy">
+          <p>Mission Control designs and builds exceptional mobile, web and desktop applications for organisations ranging from ambitious start-ups to some of the world’s biggest brands.</p>
+          <p>We work across iOS, Android, macOS, Windows, Linux and the web — from early prototypes to complex global, multi-channel programmes. Product strategy, interface design, engineering, launch and long-term support all sit on the same console.</p>
+          <a className="text-link" href="/our-history">Read our story <ArrowRight /></a>
+        </div>
+      </section>
+
+      <section className="services-preview" aria-labelledby="services-preview-title">
+        <div className="section-intro">
+          <div><span className="eyebrow">What we do</span><h2 id="services-preview-title">More than an app build.</h2></div>
+          <p>We help define the product, select the right technology, build every surface and keep the service moving after launch.</p>
+        </div>
+        <ServiceLinksGrid />
+        <a className="text-link services-all-link" href="/services">Explore all services <ArrowRight /></a>
+      </section>
+
       <section className="readiness" aria-labelledby="readiness-title">
         <div className="section-intro">
           <div><span className="eyebrow">Launch readiness check</span><h2 id="readiness-title">Five signals. One standard.</h2></div>
@@ -132,6 +172,116 @@ export function HomePage({ openAssessment }) {
           <a className="text-link" href="/case-studies">View mission details <ArrowRight /></a>
         </div>
       </section>
+    </>
+  );
+}
+
+export function ServicesPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="What we do"
+        title="Products with a job to do."
+        code="MC—SERV"
+        intro="From the first product question to launch day and long-term operation, Mission Control brings strategy, design and engineering together around one outcome."
+      />
+      <section className="story-layout services-story">
+        <div className="story-heading"><span className="eyebrow">A complete product partner</span><h2>Every surface. Every stage.</h2></div>
+        <div className="story-copy">
+          <p>Since 2013, we have created mobile applications, web platforms, desktop software, AI systems and the operational tools behind them.</p>
+          <p>Some clients arrive with a new idea. Others need to modernise a valuable platform, connect complex services or turn an impressive prototype into dependable production software.</p>
+          <p>We assemble the right approach around the mission rather than forcing every client through the same technology stack.</p>
+        </div>
+      </section>
+      <section className="services-directory" aria-labelledby="services-directory-title">
+        <div className="section-intro"><div><span className="eyebrow">Capabilities</span><h2 id="services-directory-title">Choose your launch point.</h2></div><p>Each engagement is shaped around the product, its users and what already exists.</p></div>
+        <ServiceLinksGrid />
+      </section>
+      <section className="belief-banner">
+        <div><span className="eyebrow">How we think</span><h2>Human-centred. Open-minded. Built to last.</h2></div>
+        <p>Our work is guided by accessible design, sustainable technology, responsible AI and a belief that clients should genuinely own the products they fund.</p>
+        <a className="text-link" href="/open-source-and-sustainable-development">Read our principles <ArrowRight /></a>
+      </section>
+      <ClientBand compact />
+      <LaunchCta title="Tell us what the product needs to achieve." copy="We’ll help establish the right place to begin." />
+    </>
+  );
+}
+
+export function ServiceDetailPage({ service }) {
+  return (
+    <>
+      <PageHero eyebrow="What we do" title={service.title} code={service.code} intro={service.description} image={service.image} />
+      <section className="service-statement">
+        <div><span className="eyebrow">Mission principle</span><h2>{service.statement}</h2></div>
+        <div>{service.intro.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+      </section>
+      <section className="capability-section" aria-labelledby="capability-title">
+        <div className="section-intro"><div><span className="eyebrow">The capability</span><h2 id="capability-title">What we bring to the mission.</h2></div><p>Product thinking, design and engineering stay connected from the first decision to the final release.</p></div>
+        <div className="capability-grid">
+          {service.capabilities.map(([title, copy], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{copy}</p></article>)}
+        </div>
+      </section>
+      <section className="proof-section" aria-label="Evidence from previous projects">
+        <div className="proof-heading"><span className="eyebrow">Flight record</span><h2>Evidence, not promises.</h2></div>
+        <div className="proof-grid">
+          {service.proof.map(([value, label, copy]) => <article key={label}><strong>{value}</strong><h3>{label}</h3><p>{copy}</p></article>)}
+        </div>
+      </section>
+      <section className="delivery-scope">
+        <div><span className="eyebrow">Typical scope</span><h2>One crew through the whole programme.</h2><p>We shape the engagement around what is already known, what needs proving and where your internal team needs us most.</p></div>
+        <ol>{service.deliverables.map((item, index) => <li key={item}><span>{String(index + 1).padStart(2, "0")}</span>{item}</li>)}</ol>
+      </section>
+      <section className="project-evidence" aria-labelledby="project-evidence-title">
+        <div className="section-intro"><div><span className="eyebrow">Relevant missions</span><h2 id="project-evidence-title">Work already in orbit.</h2></div><p>Selected programmes that demonstrate this capability in a real operating environment.</p></div>
+        <div className="project-evidence-grid">{service.projects.map(([client, title, copy]) => <article key={`${client}-${title}`}><span>{client}</span><h3>{title}</h3><p>{copy}</p><a href="/case-studies">View the flight log <ArrowRight /></a></article>)}</div>
+      </section>
+      <LaunchCta title={`Need ${service.shortTitle.toLowerCase()}?`} copy="Open a channel and we’ll map the most useful first step." />
+    </>
+  );
+}
+
+export function HistoryPage() {
+  return (
+    <>
+      <PageHero eyebrow="Our history" title="More than a decade in production." code="MC—HIST" intro="Mission Control has been designing, building and operating digital products since 2013 — through several generations of devices, frameworks and technology hype." image="/assets/live/vulcan-works-hq.jpg" />
+      <section className="history-intro">
+        <div><span className="eyebrow">The long view</span><h2>Built around products, not trends.</h2></div>
+        <div><p>Platforms change. The need to understand people, make sound technical decisions and stand behind the result does not.</p><p>Our history spans early mobile innovation, global publishing systems, national healthcare programmes, retail technology, applied machine learning and today’s AI-assisted products.</p></div>
+      </section>
+      <section className="timeline" aria-label="Mission Control company milestones">
+        {historyMilestones.map(([year, title, copy], index) => <article key={year}><div><span>{String(index + 1).padStart(2, "0")}</span><strong>{year}</strong></div><h2>{title}</h2><p>{copy}</p></article>)}
+      </section>
+      <section className="history-numbers">
+        <article><strong>2013</strong><span>Founded</span></article>
+        <article><strong>25+ years</strong><span>Founder’s technology experience</span></article>
+        <article><strong>15+</strong><span>OUP language properties</span></article>
+        <article><strong>8+</strong><span>NHS condition applications</span></article>
+      </section>
+      <ClientBand compact />
+      <LaunchCta title="The next chapter is still being built." copy="Bring us a product idea, a platform with history, or a prototype that needs a future." />
+    </>
+  );
+}
+
+export function PrinciplesPage() {
+  return (
+    <>
+      <PageHero eyebrow="Our principles" title="Open tools. Clear choices. Better software." code="MC—OPEN" intro="Mission Control is a long-standing advocate for Linux, open-source software, sustainable technology and development choices that give clients lasting control." image="/assets/live/framework-tux.jpg" />
+      <section className="principles-intro">
+        <div><span className="eyebrow">Software with a point of view</span><h2>Independence is a product feature.</h2></div>
+        <div><p>Open source is not simply a preference for a particular operating system. It represents transparency, adaptability and the freedom to understand and change the technology you depend on.</p><p>We apply that thinking pragmatically. The right commercial platform can still be the right choice; what matters is making the trade-offs visible and protecting the product’s future.</p></div>
+      </section>
+      <section className="principles-grid" aria-label="Mission Control operating principles">
+        {principles.map(([number, title, copy]) => <article key={number}><span>{number}</span><h2>{title}</h2><p>{copy}</p></article>)}
+      </section>
+      <section className="editorial-links">
+        <div><span className="eyebrow">From the transmission log</span><h2>Ideas we practise in public.</h2></div>
+        <a href="/blog/picking-the-right-tool-for-the-job"><span>Engineering</span><strong>Picking the right tool for the job</strong><ArrowRight /></a>
+        <a href="/blog/framework-fairphone-we-like-our-hardware-like-our-software"><span>Sustainability</span><strong>Framework & Fairphone</strong><ArrowRight /></a>
+        <a href="/blog/why-cant-ai-just-build-this-app-for-us"><span>Responsible AI</span><strong>Why can’t AI just build this app for us?</strong><ArrowRight /></a>
+      </section>
+      <LaunchCta title="Build something you can stand behind." copy="We’ll help choose an approach that works now and remains sensible later." />
     </>
   );
 }
@@ -193,10 +343,20 @@ export function AboutPage() {
         <img src="/assets/live/vulcan-works-hq.jpg" alt="The Mission Control sign hanging outside Vulcan Works, Northampton" />
         <div><span className="eyebrow">Northampton base</span><h2>From the Iron Works to Mission Control.</h2><p>Our studio sits inside Vulcan Works, a Grade II listed landmark in Northampton’s Cultural Quarter. The same walls that once housed industrial innovation now witness the digital systems we build and fly.</p></div>
       </section>
+      <section className="founder-profile">
+        <img src="/assets/live/director.png" alt="Illustrated portrait of Mission Control founder Eddie Vassallo" />
+        <div>
+          <span className="eyebrow">Founder & CEO</span>
+          <h2>Eddie Vassallo</h2>
+          <p>Eddie founded Mission Control in 2013 after a career spanning more than 25 years in mobile products, content strategy and emerging technology. His work has included global mobile initiatives, product evangelism and digital programmes for major international organisations.</p>
+          <p>He remains directly involved in product strategy, client relationships and the technology decisions behind every Mission Control engagement. He is also a regular speaker and an unapologetic advocate for Linux, open-source software and computing that gives people more control.</p>
+          <div className="founder-links"><a className="text-link" href="https://www.linkedin.com/in/eddievassallo/">Eddie on LinkedIn <ArrowUpRight /></a><a className="text-link" href="/our-history">Company history <ArrowRight /></a></div>
+        </div>
+      </section>
       <ClientBand compact />
       <section className="crew-section">
         <div className="section-intro"><div><span className="eyebrow">The people who build the things</span><h2>The crew on console.</h2></div><p>No account managers between you and the people writing the code.</p></div>
-        <div className="crew-grid">{crew.map((image, index) => <figure key={image}><img src={`/assets/live/${image}`} alt={index === 0 ? "Ink sketch portrait of a Mission Control flight director" : "Ink sketch portrait of a Mission Control crew member"} /><figcaption><span>Console {String(index + 1).padStart(2, "0")}</span><strong>{index === 0 ? "Flight director" : "Mission crew"}</strong></figcaption></figure>)}</div>
+        <div className="crew-grid">{crew.map((image, index) => <figure key={image}><img src={`/assets/live/${image}`} alt={index === 0 ? "Ink sketch portrait of Mission Control founder Eddie Vassallo" : "Ink sketch portrait of a Mission Control crew member"} /><figcaption><span>Console {String(index + 1).padStart(2, "0")}</span><strong>{index === 0 ? "Eddie Vassallo" : "Mission crew"}</strong></figcaption></figure>)}</div>
         <div className="crew-note"><p>The team has designed, built and flown digital products from first sketch to day-two support since 2013. Mobile apps, web platforms, AI systems and bespoke video infrastructure: if it ships, someone on this console has built it from zero.</p><p>We are unapologetically a bunch of geeks. People who genuinely love computing build better things on it.</p></div>
       </section>
       <LaunchCta title="Come see what we can do for you." copy="Rescue, rebuild, or ground-up — we’d love to hear what you’re flying." />

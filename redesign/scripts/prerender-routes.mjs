@@ -22,7 +22,103 @@ const currentPages = {
   "/about": { ...livePages["/about"], title: "About Us — Mission Control" },
   "/contact": { ...livePages["/contact"], title: "Contact Us — Mission Control" },
   "/blog": { ...livePages["/blog"], title: "News & Blog — Mission Control" },
+  "/services": {
+    title: "Software Development Services — Mission Control",
+    description: "Explore Mission Control's mobile, web, desktop, AI, product strategy, self-management, modernisation and long-term software support services.",
+    schemaType: "CollectionPage",
+    blocks: [
+      { tag: "h1", text: "Products with a job to do." },
+      { tag: "p", text: "From the first product question to launch day and long-term operation, Mission Control brings strategy, design and engineering together around one outcome." },
+      { tag: "h2", text: "Every surface. Every stage." },
+      { tag: "p", text: "Since 2013, we have created mobile applications, web platforms, desktop software, AI systems and the operational tools behind them." },
+      { tag: "p", text: "Our capabilities include application development, AI products, product strategy, self-management platforms, modernisation and long-term product support." },
+    ],
+  },
+  "/our-history": {
+    title: "Our History — Mission Control",
+    description: "Founded in 2013, Mission Control has delivered mobile apps, web platforms, AI systems and global digital programmes for more than a decade.",
+    schemaType: "AboutPage",
+    ogImage: `${origin}/assets/live/vulcan-works-hq.jpg`,
+    blocks: [
+      { tag: "h1", text: "More than a decade in production." },
+      { tag: "p", text: "Mission Control has designed, built and operated digital products since 2013 through several generations of devices, frameworks and technology hype." },
+      { tag: "h2", text: "Built around products, not trends." },
+      { tag: "p", text: "Our history spans early mobile innovation, Oxford University Press dictionary platforms, NHS healthcare programmes, retail technology, applied machine learning, accessibility and today's AI-assisted products." },
+      { tag: "p", text: "The studio remains independent, based in Northampton and directly connected to the clients and users behind every mission." },
+    ],
+  },
+  "/open-source-and-sustainable-development": {
+    title: "Open Source & Sustainable Development — Mission Control",
+    description: "How Mission Control applies Linux, open-source thinking, sustainable technology and responsible engineering to long-lived digital products.",
+    ogImage: `${origin}/assets/live/framework-tux.jpg`,
+    blocks: [
+      { tag: "h1", text: "Open tools. Clear choices. Better software." },
+      { tag: "p", text: "Mission Control is a long-standing advocate for Linux, open-source software, sustainable technology and development choices that give clients lasting control." },
+      { tag: "h2", text: "Independence is a product feature." },
+      { tag: "p", text: "We value accessible design, transparent trade-offs, maintainable code, repairable technology, client ownership and responsible use of artificial intelligence." },
+      { tag: "p", text: "Open source is a practical way to protect adaptability and understanding, not a rule that overrides the needs of the product." },
+    ],
+  },
 };
+
+const servicePages = [
+  {
+    route: "/mobile-and-web-app-development",
+    title: "Mobile, Web & Desktop Applications — Mission Control",
+    description: "Mission Control designs and builds bespoke mobile, web and desktop applications across iOS, Android, macOS, Windows, Linux and the web.",
+    image: "/assets/legacy/wp-content/uploads/2025/03/mobile-web-app-hero-img.png",
+    heading: "Every platform. One product vision.",
+    copy: "Since 2013, we have designed and built digital products for organisations ranging from ambitious start-ups to the NHS, Mars, Oxford University Press and Dictionary.com. Our work connects customer applications, web platforms, desktop software, operational tools and third-party systems into one coherent service.",
+  },
+  {
+    route: "/ai-agent",
+    title: "AI Products & Intelligent Agents — Mission Control",
+    description: "Mission Control designs responsible AI products, custom machine-learning systems and intelligent workflows grounded in a genuine user or business need.",
+    image: "/assets/legacy/wp-content/uploads/2025/03/ai-agent-hero-img.png",
+    heading: "Useful AI. No theatre.",
+    copy: "Our AI work includes custom machine learning, intelligent workflows, generative features and production governance. For Mars Petcare, the ForPaws neural network achieved more than 96 percent matching accuracy using up to 17 facial markers across more than 130 dog breeds.",
+  },
+  {
+    route: "/product-strategy-and-prototyping",
+    title: "Product Strategy & Prototyping — Mission Control",
+    description: "Mission Control helps organisations define, test and plan new digital products before committing to a full production build.",
+    image: "/assets/visuals/orbit-map.png",
+    heading: "Find the right product before writing too much code.",
+    copy: "We combine product discovery, experience definition, technical direction and focused prototypes to reduce uncertainty. Previous programmes include innovation work for the Financial Times and Eurostar, Mediacom and Walmart, and Mars Petcare.",
+  },
+  {
+    route: "/self-management-platforms",
+    title: "Self-Management Platforms — Mission Control",
+    description: "Mission Control builds self-service and self-management platforms for healthcare, learning, mobility, retail and specialist support services.",
+    image: "/assets/live/clickbsl.png",
+    heading: "Complex services made clear, useful and human.",
+    copy: "We combine accessible customer applications with the operational tools behind them: content management, bookings, notifications, reporting, permissions and administration. Our experience includes more than eight NHS condition apps, RACK retail-crime reporting and BikeAway cycle-hub booking.",
+  },
+  {
+    route: "/support-modernisation-and-product-rescue",
+    title: "Support, Modernisation & Product Rescue — Mission Control",
+    description: "Mission Control audits, modernises and operates existing software, including inherited platforms and AI-built MVPs that need production hardening.",
+    image: "/assets/live/blog-ai-app.webp",
+    heading: "Bring us the roadmap—or bring us the mess.",
+    copy: "We audit architecture, dependencies, security, data flows and maintainability before creating a prioritised plan. Our work covers production hardening, migrations, interface renewal, release management, monitoring and long-term support.",
+  },
+];
+
+for (const service of servicePages) {
+  currentPages[service.route] = {
+    title: service.title,
+    description: service.description,
+    schemaType: "Service",
+    ogImage: `${origin}${service.image}`,
+    blocks: [
+      { tag: "h1", text: service.heading },
+      { tag: "p", text: service.description },
+      { tag: "h2", text: "What we bring to the mission" },
+      { tag: "p", text: service.copy },
+      { tag: "p", text: "Every engagement connects product thinking, accessible design, production engineering, launch readiness and a practical plan for what happens next." },
+    ],
+  };
+}
 
 const blogRoutes = [
   ["/blog/why-cant-ai-just-build-this-app-for-us", "Why Can't AI Just Build This App For Us? — Mission Control", "AI is a remarkable tool, but production software still depends on decisions, accountability and engineering discipline.", "/assets/live/blog-ai-app.webp"],
@@ -76,7 +172,7 @@ function renderPage(page, route) {
   const article = Boolean(page.article || page.published || route.startsWith("/blog/"));
   const schema = {
     "@context": "https://schema.org",
-    "@type": article ? "Article" : "WebPage",
+    "@type": article ? "Article" : page.schemaType || "WebPage",
     name: title,
     headline: article ? title : undefined,
     description,

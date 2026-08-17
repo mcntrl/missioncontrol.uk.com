@@ -1,16 +1,20 @@
 import { useEffect, useMemo, useState } from "react";
 import { AssessmentModal, SiteFooter, SiteHeader } from "./components/SiteChrome";
-import { blogPosts, legacyPageMap } from "./content/site-data";
+import { blogPosts, legacyPageMap, servicePages } from "./content/site-data";
 import {
   AboutPage,
   ArticlePage,
   BlogPage,
   CaseStudiesPage,
   ContactPage,
+  HistoryPage,
   HomePage,
   LegacyPage,
   NotFoundPage,
+  PrinciplesPage,
   ProcessPage,
+  ServiceDetailPage,
+  ServicesPage,
 } from "./pages/SitePages";
 
 const canonicalOrigin = "https://wearemissioncontrol.com";
@@ -40,6 +44,22 @@ const routeSeo = {
     title: "News & Blog — Mission Control",
     description: "Dispatches from the Mission Control console: launches, engineering opinions, AI, Linux, hardware and practical product guidance.",
   },
+  "/services": {
+    title: "Software Development Services — Mission Control",
+    description: "Explore Mission Control's mobile, web, desktop, AI, product strategy, self-management, modernisation and long-term software support services.",
+    schemaType: "CollectionPage",
+  },
+  "/our-history": {
+    title: "Our History — Mission Control",
+    description: "Founded in 2013, Mission Control has delivered mobile apps, web platforms, AI systems and global digital programmes for more than a decade.",
+    schemaType: "AboutPage",
+    image: "/assets/live/vulcan-works-hq.jpg",
+  },
+  "/open-source-and-sustainable-development": {
+    title: "Open Source & Sustainable Development — Mission Control",
+    description: "How Mission Control applies Linux, open-source thinking, sustainable technology and responsible engineering to long-lived digital products.",
+    image: "/assets/live/framework-tux.jpg",
+  },
 };
 
 function normalisePath(pathname) {
@@ -56,7 +76,7 @@ function setMeta(selector, attributes) {
   Object.entries(attributes).forEach(([key, value]) => element.setAttribute(key, value));
 }
 
-function useSeo(path, title, description, type = "website", image = "/assets/visuals/forpaws-feature.png") {
+function useSeo(path, title, description, type = "website", image = "/assets/visuals/forpaws-feature.png", schemaType = "WebPage") {
   useEffect(() => {
     const canonical = `${canonicalOrigin}${path === "/" ? "/" : `${path}/`}`;
     document.title = title;
@@ -76,7 +96,7 @@ function useSeo(path, title, description, type = "website", image = "/assets/vis
     schema.type = "application/ld+json";
     schema.textContent = JSON.stringify({
       "@context": "https://schema.org",
-      "@type": type === "article" ? "Article" : "WebPage",
+      "@type": type === "article" ? "Article" : schemaType,
       name: title,
       description,
       url: canonical,
@@ -84,12 +104,14 @@ function useSeo(path, title, description, type = "website", image = "/assets/vis
       publisher: { "@type": "Organization", name: "Mission Control", url: `${canonicalOrigin}/` },
     });
     document.head.appendChild(schema);
-  }, [description, image, path, title, type]);
+  }, [description, image, path, schemaType, title, type]);
 }
 
 function resolveRoute(path) {
   const post = blogPosts.find((item) => item.path === path);
   if (post) return { kind: "article", post };
+  const service = servicePages.find((item) => item.route === path);
+  if (service) return { kind: "service-detail", service };
   if (routeSeo[path]) return { kind: path === "/" ? "home" : path.slice(1) };
   const legacy = legacyPageMap.get(path);
   if (legacy) return { kind: "legacy", page: legacy };
@@ -103,11 +125,13 @@ export function App() {
 
   const seo = route.kind === "article"
     ? { title: `${route.post.title} — Mission Control`, description: route.post.excerpt, type: "article", image: route.post.image }
+    : route.kind === "service-detail"
+      ? { title: `${route.service.title} — Mission Control`, description: route.service.description, type: "website", image: route.service.image, schemaType: "Service" }
     : route.kind === "legacy"
       ? { title: route.page.title, description: route.page.description || "Mission Control archive", type: route.page.published ? "article" : "website", image: route.page.ogImage || "/assets/visuals/orbit-map.png" }
       : routeSeo[path] || { title: "Route not found — Mission Control", description: "The requested Mission Control route could not be found." };
 
-  useSeo(path, seo.title, seo.description, seo.type, seo.image);
+  useSeo(path, seo.title, seo.description, seo.type, seo.image, seo.schemaType);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -121,6 +145,10 @@ export function App() {
     case "about": page = <AboutPage />; break;
     case "contact": page = <ContactPage />; break;
     case "blog": page = <BlogPage />; break;
+    case "services": page = <ServicesPage />; break;
+    case "our-history": page = <HistoryPage />; break;
+    case "open-source-and-sustainable-development": page = <PrinciplesPage />; break;
+    case "service-detail": page = <ServiceDetailPage service={route.service} />; break;
     case "article": page = <ArticlePage post={route.post} />; break;
     case "legacy": page = <LegacyPage page={route.page} />; break;
     default: page = <NotFoundPage />;

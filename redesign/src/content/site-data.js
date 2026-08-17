@@ -2,11 +2,185 @@ import livePages from "./live-pages.json";
 import legacyPages from "./legacy-pages.json";
 
 export const primaryNav = [
+  { label: "What we do", href: "/services" },
+  { label: "Our work", href: "/case-studies" },
   { label: "Our process", href: "/our-process" },
-  { label: "Case studies", href: "/case-studies" },
-  { label: "About us", href: "/about" },
-  { label: "Blog", href: "/blog" },
+  { label: "Our story", href: "/about" },
+  { label: "Insights", href: "/blog" },
 ];
+
+export const servicePages = [
+  {
+    route: "/mobile-and-web-app-development",
+    code: "MC—APP",
+    title: "Mobile, web & desktop applications",
+    shortTitle: "Applications for every platform",
+    description: "Mission Control designs and builds bespoke mobile, web and desktop applications across iOS, Android, macOS, Windows, Linux and the web.",
+    image: "/assets/legacy/wp-content/uploads/2025/03/mobile-web-app-hero-img.png",
+    statement: "Every platform. One product vision.",
+    intro: [
+      "Since 2013, we have designed and built digital products for organisations ranging from ambitious start-ups to the NHS, Mars, Oxford University Press and Dictionary.com.",
+      "Some missions begin with a sketch. Others arrive with years of data, existing infrastructure and several audiences to satisfy. We bring product thinking, interface design and engineering together so the result works as one coherent service — not a collection of disconnected screens.",
+    ],
+    capabilities: [
+      ["Mobile applications", "Native and cross-platform applications for iPhone, iPad, Android and specialist devices, including store preparation and release management."],
+      ["Web platforms", "Customer-facing services, complex editorial products, account areas, dashboards and operational tools built for real-world traffic."],
+      ["Desktop software", "Purpose-built experiences for macOS, Windows and Linux where browser software is not the right answer."],
+      ["Systems & integrations", "Payments, identity, content systems, APIs, notifications, analytics and third-party services engineered as part of the product."],
+    ],
+    proof: [
+      ["15+", "OUP language sites", "A five-year dictionary-platform programme connected to complex lexical data."],
+      ["20,000", "Requests per minute", "Peak traffic managed across Oxford's dictionary properties."],
+      ["iOS / Android / Web", "One product ecosystem", "Multi-channel delivery across healthcare, education, retail and accessibility."],
+    ],
+    deliverables: ["Product and technical discovery", "User experience and accessible interface design", "Native or cross-platform engineering", "Back-office systems and content management", "App-store and production launch", "Monitoring, support and continuous improvement"],
+    projects: [
+      ["Positive Signs", "ClickBSL", "A bespoke video platform connecting deaf users with British Sign Language interpreters."],
+      ["Smart_R Education", "Mobile learning", "Gamified lessons, adaptive learning, social features and live progress across mobile and web."],
+      ["Oxford University Press", "Dictionary platforms", "More than 15 high-traffic language properties supported over a five-year engagement."],
+    ],
+  },
+  {
+    route: "/ai-agent",
+    code: "MC—AIX",
+    title: "AI products & intelligent agents",
+    shortTitle: "AI products that earn their place",
+    description: "Mission Control designs responsible AI products, custom machine-learning systems and intelligent workflows grounded in a genuine user or business need.",
+    image: "/assets/legacy/wp-content/uploads/2025/03/ai-agent-hero-img.png",
+    statement: "Useful AI. No theatre.",
+    intro: [
+      "We have worked with artificial intelligence since long before every product needed an AI badge. Our approach starts with the outcome: what decision, task or experience can technology genuinely improve?",
+      "That may mean a custom neural network, an intelligent workflow, assisted content processing or a carefully governed generative-AI feature. If a simpler solution is better, we will say so.",
+    ],
+    capabilities: [
+      ["Custom machine learning", "Purpose-built recognition, classification and matching systems trained around the problem rather than a generic demo."],
+      ["AI-assisted products", "Generative features integrated into complete products with appropriate review, fallbacks and human oversight."],
+      ["Intelligent agents", "Workflow agents that connect approved data and business systems while preserving traceability and control."],
+      ["Production governance", "Security, privacy, evaluation, monitoring and failure handling designed before an AI feature reaches customers."],
+    ],
+    proof: [
+      ["96%+", "Matching accuracy", "Achieved by the ForPaws dog-recognition platform developed for Mars Petcare."],
+      ["17", "Facial markers", "Used by the custom neural network to identify an individual dog."],
+      ["130+", "Dog breeds", "Recognised by the system, including difficult low-light and off-centre photographs."],
+    ],
+    deliverables: ["AI opportunity and feasibility assessment", "Data and integration planning", "Prototype and evaluation framework", "Product interface and human oversight", "Secure production engineering", "Monitoring and iterative improvement"],
+    projects: [
+      ["Mars Petcare", "ForPaws AI", "A dog-recognition system whose success became a catalyst for a new product division."],
+      ["Positive Signs", "ClickBSL", "AI-assisted translation, recording and support capabilities inside a human-led accessibility service."],
+      ["Product teams", "AI build rescue", "Auditing generated code and turning promising prototypes into supportable products."],
+    ],
+  },
+  {
+    route: "/product-strategy-and-prototyping",
+    code: "MC—LAB",
+    title: "Product strategy & prototyping",
+    shortTitle: "From idea to credible product plan",
+    description: "Mission Control helps organisations define, test and plan new digital products before committing to a full production build.",
+    image: "/assets/visuals/orbit-map.png",
+    statement: "Find the right product before writing too much code.",
+    intro: [
+      "The earliest product decisions are often the most expensive to get wrong. We work with leadership teams, domain experts and users to turn an opportunity into a clear proposition, practical technical plan and testable experience.",
+      "A prototype is not the finish line. It is a tool for answering questions, aligning stakeholders and reducing uncertainty before production engineering begins.",
+    ],
+    capabilities: [
+      ["Product discovery", "Stakeholder workshops, user needs, success measures and commercial constraints translated into a shared mission brief."],
+      ["Experience definition", "Journeys, information architecture and interface concepts that make the proposed service tangible."],
+      ["Technical direction", "Architecture options, integrations, platform choices and delivery risks assessed before they become sunk cost."],
+      ["Prototype programmes", "Focused demonstrators and MVPs designed to validate a proposition with users, partners or investors."],
+    ],
+    proof: [
+      ["FT × Eurostar", "Loyalty prototype", "An end-to-end location-aware pass and rewards concept created with the FT innovation team."],
+      ["Walmart", "Impulse commerce", "A Scan & Go concept subsequently adopted into the main application in multiple territories."],
+      ["12 weeks", "Concept to live", "The initial ForPaws experience moved from product concept to launch at speed."],
+    ],
+    deliverables: ["Opportunity and audience definition", "Prioritised product requirements", "User journeys and service blueprint", "Interactive prototype or technical proof", "Architecture and platform recommendation", "Phased roadmap and investment plan"],
+    projects: [
+      ["Financial Times × Eurostar", "Passbook programme", "A loyalty and location-aware offers prototype connecting mobile wallets and member benefits."],
+      ["Mediacom × Walmart", "Retail innovation", "Commerce prototypes that tested new behaviour before entering a global product ecosystem."],
+      ["Mars Petcare", "ForPaws", "Product ideation, identity, experience design and engineering delivered as one programme."],
+    ],
+  },
+  {
+    route: "/self-management-platforms",
+    code: "MC—SELF",
+    title: "Self-management platforms",
+    shortTitle: "Digital services people can run themselves",
+    description: "Mission Control builds self-service and self-management platforms for healthcare, learning, mobility, retail and specialist support services.",
+    image: "/assets/live/clickbsl.png",
+    statement: "Complex services made clear, useful and human.",
+    intro: [
+      "Some of our most valuable work helps people complete an important task without waiting in a queue, filling in paperwork or navigating a system designed around the organisation rather than the user.",
+      "We combine customer applications with the operational tools behind them: content management, bookings, notifications, reporting, permissions and administration. Both sides of the service are designed together.",
+    ],
+    capabilities: [
+      ["Customer applications", "Accessible mobile and web experiences for booking, learning, reporting, condition management and specialist support."],
+      ["Operational consoles", "Dashboards and administration tools that help internal teams manage users, content, cases and service performance."],
+      ["Content & communications", "Structured publishing, real-time alerts, personalised notifications and guidance managed by authorised teams."],
+      ["Connected services", "Identity, payments, hardware access, law-enforcement reporting and specialist integrations brought into one workflow."],
+    ],
+    proof: [
+      ["8+", "NHS condition apps", "Supporting people managing chronic and acute conditions across iOS, Android and web."],
+      ["Hours → minutes", "Retail reporting", "RACK reduced a complex crime-reporting process to a guided mobile workflow."],
+      ["NFC", "Keyless access", "BikeAway users can book and open secure cycle storage without connectivity."],
+    ],
+    deliverables: ["Service and user-journey design", "Accessible customer applications", "Administration and case-management tools", "Publishing and notification systems", "Reporting and operational analytics", "Deployment, training and support"],
+    projects: [
+      ["NHS", "Condition app programme", "More than eight apps and a central publishing system for NHS editors across the UK."],
+      ["RACK", "Retail crime reporting", "Mobile incident capture connected to retailer management and law-enforcement workflows."],
+      ["BikeAway", "Cycle-hub booking", "Booking, payment, administration and NFC access across a connected service."],
+    ],
+  },
+  {
+    route: "/support-modernisation-and-product-rescue",
+    code: "MC—OPS",
+    title: "Support, modernisation & product rescue",
+    shortTitle: "Keep valuable products moving",
+    description: "Mission Control audits, modernises and operates existing software, including inherited platforms and AI-built MVPs that need production hardening.",
+    image: "/assets/live/blog-ai-app.webp",
+    statement: "Bring us the roadmap—or bring us the mess.",
+    intro: [
+      "Not every worthwhile product begins with us. We take on inherited systems, ageing applications and AI-generated prototypes that have proved the idea but are not ready for customers, compliance reviews or sustained growth.",
+      "We start by understanding what is valuable, what is fragile and what the organisation needs next. The result is a prioritised plan that protects working product value while removing operational risk.",
+    ],
+    capabilities: [
+      ["Technical audit", "Architecture, dependencies, security, data flows, environments and maintainability assessed without judgement."],
+      ["Production hardening", "Authentication, secrets, payments, GDPR, testing, monitoring and deployment brought to a dependable standard."],
+      ["Modernisation", "Framework upgrades, platform migrations, interface renewal and targeted replacement of high-risk components."],
+      ["Ongoing operation", "Release management, app-store submissions, monitoring, support and a practical improvement roadmap."],
+    ],
+    proof: [
+      ["5+ years", "OUP engagement", "A long-running platform partnership covering product development, hosting and continuous refinement."],
+      ["15+", "Connected properties", "One content and data ecosystem expanded across a global language portfolio."],
+      ["5 signals", "Launch standard", "Security, privacy, stores, payments and maintainability checked before go-live."],
+    ],
+    deliverables: ["Codebase and infrastructure audit", "Prioritised risk and remediation plan", "Security and privacy hardening", "Upgrade and migration delivery", "Monitoring and release operations", "SLA-backed product support"],
+    projects: [
+      ["Oxford University Press", "Long-term platform operation", "Five years of development, integration, hosting and ongoing refinement."],
+      ["Dictionary.com", "Lexico", "A high-traffic product operated with complex lexical-data integrations and editorial tooling."],
+      ["AI-built products", "From prototype to production", "Focused rescue work that preserves the useful idea while replacing fragile foundations."],
+    ],
+  },
+];
+
+export const historyMilestones = [
+  ["2013", "Mission Control is founded", "Eddie Vassallo establishes an independent product and software studio built around mobile experience, emerging technology and direct collaboration with clients."],
+  ["2015", "Dictionary platforms begin to scale", "An initial Oxford University Press engagement grows from two language microsites into a much larger publishing and lexical-data programme."],
+  ["2016", "Digital health at national scale", "The NHS condition-app programme brings guidance and self-management tools to people living with chronic and acute conditions."],
+  ["2019", "Lexico launches", "Mission Control develops every page of Dictionary.com and Oxford University Press's Lexico platform, supported by bespoke editorial technology."],
+  ["2020s", "Products move into more industries", "Retail commerce, crime reporting, mobility, pet technology, education and accessibility missions extend the studio's experience across complex services."],
+  ["Today", "Building—and rescuing—the next generation", "The crew continues to create ambitious products from zero while helping organisations turn promising AI-built prototypes into secure, maintainable software."],
+];
+
+export const principles = [
+  ["01", "People before features", "We begin with the people using and operating a service. Accessibility, empathy and clarity are product foundations, not a final compliance pass."],
+  ["02", "The right tool for the mission", "Native, cross-platform and web technologies all have trade-offs. We select around users, lifespan, internal capability and the future of the product."],
+  ["03", "Open by preference", "Linux, open standards and open-source software encourage transparency, adaptability and greater client control."],
+  ["04", "Ownership without lock-in", "Clients should be able to understand, maintain and evolve the software they have funded. Documentation and sensible architecture matter."],
+  ["05", "Sustainable over disposable", "We value repairable hardware, maintainable code and technology choices that can serve a product for years rather than a launch cycle."],
+  ["06", "AI with accountability", "AI can accelerate good teams, but important products still need human judgement, security, testing and someone accountable for the outcome."],
+];
+
+export const footerServiceLinks = servicePages.map(({ route, shortTitle }) => ({ href: route, label: shortTitle }));
 
 export const clients = [
   { name: "NHS", src: "/assets/clients/nhs.png" },
@@ -174,9 +348,13 @@ export const legacyPageMap = new Map(legacyPages.map((page) => [page.route.repla
 
 export const allIndexableRoutes = [
   "/",
+  "/services",
+  ...servicePages.map((service) => service.route),
   "/our-process",
   "/case-studies",
   "/about",
+  "/our-history",
+  "/open-source-and-sustainable-development",
   "/contact",
   "/blog",
   ...blogPosts.map((post) => post.path),

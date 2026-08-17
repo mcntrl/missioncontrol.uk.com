@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, ArrowUpRight, CheckCircle, List, X } from "@phosphor-icons/react";
-import { primaryNav } from "../content/site-data";
+import { footerServiceLinks, primaryNav } from "../content/site-data";
 
 export function Brand() {
   return (
@@ -46,26 +46,32 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <div className="footer-brand"><Brand /><p>From AI-built to business-ready.</p></div>
+      <div className="footer-brand"><Brand /><p>Independent product and software studio.<br />On console since 2013.</p></div>
       <div>
-        <h2>Base</h2>
-        <address>Unit 24, Vulcan Works<br />34–38 Guildhall Road<br />Northampton NN1 1EW</address>
+        <h2>Services</h2>
+        {footerServiceLinks.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
       </div>
       <div>
-        <h2>Comms</h2>
+        <h2>Company</h2>
+        <a href="/about">About Mission Control</a>
+        <a href="/our-history">Our history</a>
+        <a href="/our-process">Our process</a>
+        <a href="/case-studies">Case studies</a>
+        <a href="/open-source-and-sustainable-development">Our principles</a>
+        <a href="/blog">News & insights</a>
+      </div>
+      <div>
+        <h2>Base & comms</h2>
+        <address>Unit 24, Vulcan Works<br />34–38 Guildhall Road<br />Northampton NN1 1EW</address>
         <a href="mailto:hello@wearemissioncontrol.com">hello@wearemissioncontrol.com</a>
         <a href="tel:+441604913390">+44 (0)1604 913390</a>
-      </div>
-      <div>
-        <h2>Navigate</h2>
-        {primaryNav.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
-        <a href="/contact">Contact us</a>
       </div>
       <div>
         <h2>Orbit</h2>
         <a href="https://www.linkedin.com/company/missioncntrl">LinkedIn</a>
         <a href="https://x.com/missioncntrlhq">X / Twitter</a>
         <a href="https://fosstodon.org/@missioncontrol">Mastodon</a>
+        <a href="/contact">Contact us</a>
       </div>
       <div className="footer-base"><span className="status-dot" /> All systems nominal <span>© 2026 Mission Control · Est. 2013</span></div>
     </footer>
