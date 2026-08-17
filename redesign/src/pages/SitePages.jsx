@@ -112,7 +112,12 @@ export function HomePage({ openAssessment }) {
         <div className="hero-copy">
           <div className="mission-meta"><span className="status-dot" /> Black box launch room <i /> Est. 2013 <i /> Northampton, UK</div>
           <p className="hero-kicker">Build from zero. Rescue what almost works.</p>
-          <h1 id="hero-heading">Your prototype<br />worked.<br /><br />Now make it<br />survive production.</h1>
+          <h1 id="hero-heading">
+            <span>Your prototype</span>
+            <span className="hero-highlight">worked.</span>
+            <span>Now make it</span>
+            <span className="hero-outline">survive production.</span>
+          </h1>
           <p className="hero-lede">We build production-grade software from day one — and rescue AI-built MVPs that hit the wall. Secure, compliant, approved and ready to scale.</p>
           <div className="hero-actions">
             <button className="button button-primary" type="button" onClick={openAssessment}>Book an assessment <ArrowRight weight="bold" /></button>
