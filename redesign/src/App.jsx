@@ -126,7 +126,13 @@ export function App() {
   const seo = route.kind === "article"
     ? { title: `${route.post.title} — Mission Control`, description: route.post.excerpt, type: "article", image: route.post.image }
     : route.kind === "service-detail"
-      ? { title: `${route.service.title} — Mission Control`, description: route.service.description, type: "website", image: route.service.image, schemaType: "Service" }
+      ? {
+          title: route.service.seoTitle || `${route.service.title} — Mission Control`,
+          description: route.service.description,
+          type: route.service.schemaType === "Article" ? "article" : "website",
+          image: route.service.image,
+          schemaType: route.service.schemaType || "Service",
+        }
     : route.kind === "legacy"
       ? { title: route.page.title, description: route.page.description || "Mission Control archive", type: route.page.published ? "article" : "website", image: route.page.ogImage || "/assets/visuals/orbit-map.png" }
       : routeSeo[path] || { title: "Route not found — Mission Control", description: "The requested Mission Control route could not be found." };

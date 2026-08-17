@@ -88,8 +88,9 @@ export function LaunchCta({ title = "From AI-built to business-ready.", copy = "
   );
 }
 
-function ServiceLinksGrid({ limit }) {
-  const services = typeof limit === "number" ? servicePages.slice(0, limit) : servicePages;
+function ServiceLinksGrid({ limit, tier = "core" }) {
+  const matchingServices = servicePages.filter((service) => (service.tier || "core") === tier);
+  const services = typeof limit === "number" ? matchingServices.slice(0, limit) : matchingServices;
   return (
     <div className="service-links-grid">
       {services.map((service, index) => (
@@ -197,6 +198,14 @@ export function ServicesPage() {
         <div className="section-intro"><div><span className="eyebrow">Capabilities</span><h2 id="services-directory-title">Choose your launch point.</h2></div><p>Each engagement is shaped around the product, its users and what already exists.</p></div>
         <ServiceLinksGrid />
       </section>
+      <section className="services-directory" aria-labelledby="platform-services-title">
+        <div className="section-intro"><div><span className="eyebrow">Application platforms</span><h2 id="platform-services-title">The right surface for the product.</h2></div><p>Focused mobile, iOS, Android, web and AI application capabilities, all connected to the same product and engineering discipline.</p></div>
+        <ServiceLinksGrid tier="platform" />
+      </section>
+      <section className="services-directory" aria-labelledby="service-guides-title">
+        <div className="section-intro"><div><span className="eyebrow">Planning guidance</span><h2 id="service-guides-title">Make the first decisions count.</h2></div><p>Practical guidance for scoping an application and establishing a credible route to delivery.</p></div>
+        <ServiceLinksGrid tier="guide" />
+      </section>
       <section className="belief-banner">
         <div><span className="eyebrow">How we think</span><h2>Human-centred. Open-minded. Built to last.</h2></div>
         <p>Our work is guided by accessible design, sustainable technology, responsible AI and a belief that clients should genuinely own the products they fund.</p>
@@ -209,15 +218,16 @@ export function ServicesPage() {
 }
 
 export function ServiceDetailPage({ service }) {
+  const isGuide = service.pageType === "guide";
   return (
     <>
-      <PageHero eyebrow="What we do" title={service.title} code={service.code} intro={service.description} image={service.image} />
+      <PageHero eyebrow={isGuide ? "App development guide" : "What we do"} title={service.title} code={service.code} intro={service.description} image={service.image} />
       <section className="service-statement">
         <div><span className="eyebrow">Mission principle</span><h2>{service.statement}</h2></div>
         <div>{service.intro.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
       </section>
       <section className="capability-section" aria-labelledby="capability-title">
-        <div className="section-intro"><div><span className="eyebrow">The capability</span><h2 id="capability-title">What we bring to the mission.</h2></div><p>Product thinking, design and engineering stay connected from the first decision to the final release.</p></div>
+        <div className="section-intro"><div><span className="eyebrow">{isGuide ? "The variables" : "The capability"}</span><h2 id="capability-title">{isGuide ? "What shapes the investment." : "What we bring to the mission."}</h2></div><p>{isGuide ? "A useful estimate makes these decisions and assumptions visible." : "Product thinking, design and engineering stay connected from the first decision to the final release."}</p></div>
         <div className="capability-grid">
           {service.capabilities.map(([title, copy], index) => <article key={title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{copy}</p></article>)}
         </div>
@@ -229,14 +239,20 @@ export function ServiceDetailPage({ service }) {
         </div>
       </section>
       <section className="delivery-scope">
-        <div><span className="eyebrow">Typical scope</span><h2>One crew through the whole programme.</h2><p>We shape the engagement around what is already known, what needs proving and where your internal team needs us most.</p></div>
+        <div><span className="eyebrow">{isGuide ? "A useful estimate" : "Typical scope"}</span><h2>{isGuide ? "Turn uncertainty into a delivery plan." : "One crew through the whole programme."}</h2><p>{isGuide ? "We define the smallest credible first phase and make the assumptions behind it explicit." : "We shape the engagement around what is already known, what needs proving and where your internal team needs us most."}</p></div>
         <ol>{service.deliverables.map((item, index) => <li key={item}><span>{String(index + 1).padStart(2, "0")}</span>{item}</li>)}</ol>
       </section>
       <section className="project-evidence" aria-labelledby="project-evidence-title">
         <div className="section-intro"><div><span className="eyebrow">Relevant missions</span><h2 id="project-evidence-title">Work already in orbit.</h2></div><p>Selected programmes that demonstrate this capability in a real operating environment.</p></div>
         <div className="project-evidence-grid">{service.projects.map(([client, title, copy]) => <article key={`${client}-${title}`}><span>{client}</span><h3>{title}</h3><p>{copy}</p><a href="/case-studies">View the flight log <ArrowRight /></a></article>)}</div>
       </section>
-      <LaunchCta title={`Need ${service.shortTitle.toLowerCase()}?`} copy="Open a channel and we’ll map the most useful first step." />
+      {service.related?.length > 0 && (
+        <section className="editorial-links" aria-labelledby="related-services-title">
+          <div><span className="eyebrow">Related capabilities</span><h2 id="related-services-title">Continue the flight plan.</h2></div>
+          {service.related.map(([label, title, href]) => <a href={href} key={href}><span>{label}</span><strong>{title}</strong><ArrowRight /></a>)}
+        </section>
+      )}
+      <LaunchCta title={isGuide ? "Need a realistic app estimate?" : `Need ${service.shortTitle.toLowerCase()}?`} copy="Open a channel and we’ll map the most useful first step." />
     </>
   );
 }
